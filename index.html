@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscrição</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/images/logo-satc.png" alt="Logo da Satc">
+        <nav>
+            <ul>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="https://google.com" target="_blank">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Cadastre-se</h1>
+    </header>    
+    <section>
+        <h2>Formulário de Inscrição</h2>
+        <p>Preencha seus dados abaixo para participar do nosso curso na SATC</p>
+        <h3>Informações pessoais</h3>
+        <form action="#">
+            <fieldset>
+                <label for="name">Seu nome:</label> <br>
+                <input type="text" name="name" id="name" placeholder="Digite aqui...">
+                <br>
+
+                <label for="email">Seu email:</label> <br>
+                <input type="email" name="email" id="email" placeholder="Digite aqui...">
+                <br>
+                
+                <label for="curso">Curso:</label> <br>
+                <input type="text" name="curso" id="curso" placeholder="Digite aqui...">
+                <br>
+
+                <label for="participar">Por que deseja participar?</label> <br>
+                <textarea name="participar" id="participar" rows="3"></textarea>
+                <br>
+                
+                <label for="turn">Turno desejado:</label> <br>
+                <select name="turn" id="turn">
+                    <option value="Manhã" selected>Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
+                <br>
+
+                <label for="password">Senha:</label> <br>
+                <input type="password" name="password" id="password" placeholder="Digite aqui...">
+                <br>
+
+                <button type="submit">Cadastrar</button>
+            </fieldset>
+        </form>
+    </section>
+    <section>
+        <h2>Contato</h2>
+        <p>Tem dúvidas? Entre em contato conosco!</p>
+
+        <p><strong>Email:</strong> contato@satc.edu.br</p>
+        <p><strong>Telefone:</strong> (48) 3431-7500</p>
+        <p><strong>Endereço:</strong> Rua Pascoal Meller, 73 - Criciúma/SC</p>
+
+        <p>Atendimento de segunda a sexta, das 8h às 22h</p>
+        <p>Acompanhe também nossas redes sociais para ficar por dentro das novidades.</p>
+
+    </section>
+    <hr>
+    <footer>
+        <p>Todos os direitos reservados 2025.</p>
+    </footer>
+</body>
+</html>
