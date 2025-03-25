@@ -40,7 +40,7 @@ function adicionarTarefa(descricao) {
 }
 
 function marcarComoCompleta(i) { // indice do item a ser marcado como completo ( se quiser fazer um UX mais entendivel da pra diminuir 1, pra então o cara só digitar, "excluir item 1" e deleta o item 0)
-    listaDeTarefas[i].completa = true;
+    if (listaDeTarefas && listaDeTarefas[i]) listaDeTarefas[i].completa = true;
 }
 
 function listarTarefas() {
@@ -63,4 +63,5 @@ removerTarefa('Fazer o trabalho de Fron-end o mais rapido que der antes que esqu
 console.log('-----------')
 listarTarefas();
 
+if (listaDeTarefas.length > limiteTarefas) console.log('Você atingiu o limite de tarefas.');
 
