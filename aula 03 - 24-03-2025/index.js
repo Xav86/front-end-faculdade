@@ -30,6 +30,9 @@ function saudarUsuario(nome, idade) {
 
 function adicionarTarefa(descricao) {
     if (listaDeTarefas.length > limiteTarefas) return console.log('O limite já foi alcançado, não da pra adicionar mais itens.');
+    if (listaDeTarefas.length < limiteTarefas) {
+        console.log(`Item 1 - ${ listaDeTarefas[0] ? listaDeTarefas[0] : 'Não tem também' }, ${ listaDeTarefas[1] ? listaDeTarefas[1] : 'Não tem' }`);
+    }
 
     listaDeTarefas.push({
         descricao: descricao,
