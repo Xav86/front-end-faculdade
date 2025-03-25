@@ -7,15 +7,19 @@ const limiteTarefas = 4;
 
 let listaDeTarefas = [
     {
-        descricao: 'Fazer o trabalho de Fron-end o mais rapido que der antes que esqueça',
+        descricao: 'Estudar',
         completa: false,
     },
     {
-        descricao: 'Fazer o trabalho de Fron-end o mais rapido que der antes que esqueça',
+        descricao: 'Comprar leite',
         completa: false,
     },
     {
-        descricao: 'Fazer o trabalho de Fron-end o mais rapido que der antes que esqueça',
+        descricao: 'Ir à academia no dia de perna',
+        completa: false,
+    },
+    {
+        descricao: 'Estudar (de novo)',
         completa: false,
     },
 
@@ -74,15 +78,7 @@ listarTarefas();
 
 */
 
-
 saudarUsuario(nome, idade);
-removerTarefa('Fazer o trabalho de Fron-end o mais rapido que der antes que esqueça');
-adicionarTarefa('Estudar');
-adicionarTarefa('Compar leite');
-adicionarTarefa('Ir à academia no dia de perna');
-adicionarTarefa('Estudar (de novo)');
-marcarComoCompleta(1);
-marcarComoCompleta(3);
 listarTarefas();
 
 if (listaDeTarefas.length === limiteTarefas) console.log('⚠ Você atingiu o limite de tarefas.');
