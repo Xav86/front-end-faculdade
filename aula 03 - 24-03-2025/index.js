@@ -29,7 +29,7 @@ function saudarUsuario(nome, idade) {
 }
 
 function adicionarTarefa(descricao) {
-    if (lista.length > limiteTarefas) return console.log('O limite já foi alcançado, não da pra adicionar mais itens.');
+    if (listaDeTarefas.length > limiteTarefas) return console.log('O limite já foi alcançado, não da pra adicionar mais itens.');
 
     listaDeTarefas.push({
         descricao: descricao,
@@ -52,15 +52,15 @@ function listarTarefas() {
 }
 
 function removerTarefa(descricao) {
-    listaDeTarefas = listaDeTarefas.filter(function (item) {
-        return item.descricao === descricao;
-    });
+    listaDeTarefas = listaDeTarefas.filter(item => item.descricao !== descricao);
 }
 
 saudarUsuario(nome, idade);
+adicionarTarefa('Testando, teste teste teste legal');
 marcarComoCompleta(1);
 listarTarefas();
 removerTarefa('Fazer o trabalho de Fron-end o mais rapido que der antes que esqueça');
+console.log('-----------')
 listarTarefas();
 
 
