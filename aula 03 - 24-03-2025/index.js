@@ -44,8 +44,10 @@ function marcarComoCompleta(i) { // indice do item a ser marcado como completo (
 }
 
 function listarTarefas() {
-    listaDeTarefas.forEach(item => {
-        console.log(item);
+    listaDeTarefas.forEach((item, i) => {
+        console.log(`
+            ${i + 1} - Tarefa: ${ item.descricao } | Status: ${ item.completa }.
+        `);
     });
 
     return;
