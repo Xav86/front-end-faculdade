@@ -23,7 +23,7 @@ let listaDeTarefas = [
 
 function saudarUsuario(nome, idade) {
     console.log(`
-        Olá, ${ nome }, você tem ${ idade } anos.
+        👋 Olá, ${ nome }, você tem ${ idade } anos.
     `);
     return;
 }
@@ -31,7 +31,7 @@ function saudarUsuario(nome, idade) {
 function adicionarTarefa(descricao) {
     if (listaDeTarefas.length > limiteTarefas) return console.log('O limite já foi alcançado, não da pra adicionar mais itens.');
     if (listaDeTarefas.length < limiteTarefas) {
-        console.log(`Item 1 - ${ listaDeTarefas[0] ? listaDeTarefas[0] : 'Não tem também' }, ${ listaDeTarefas[1] ? listaDeTarefas[1] : 'Não tem' }`);
+        console.log(`Item 1 - ${ listaDeTarefas[0] ? listaDeTarefas[0].descricao : 'Não tem também' },\nItem 2 - ${ listaDeTarefas[1] ? listaDeTarefas[1].descricao : 'Não tem' }`);
     }
 
     listaDeTarefas.push({
@@ -49,7 +49,7 @@ function marcarComoCompleta(i) { // indice do item a ser marcado como completo (
 function listarTarefas() {
     listaDeTarefas.forEach((item, i) => {
         console.log(`
-            ${i + 1} - Tarefa: ${ item.descricao } | Status: ${ item.completa }.
+            ${i + 1} - Tarefa: ${ item.descricao } | Status: ${ item.completa ? 'Completa' : 'Incompleta' }.
         `);
     });
 
@@ -60,13 +60,30 @@ function removerTarefa(descricao) {
     listaDeTarefas = listaDeTarefas.filter(item => item.descricao !== descricao);
 }
 
+/* consoles de teste
+
 saudarUsuario(nome, idade);
+adicionarTarefa('Testando, teste teste teste legal');
 adicionarTarefa('Testando, teste teste teste legal');
 marcarComoCompleta(1);
 listarTarefas();
 removerTarefa('Fazer o trabalho de Fron-end o mais rapido que der antes que esqueça');
 console.log('-----------')
+marcarComoCompleta(0)
 listarTarefas();
 
-if (listaDeTarefas.length > limiteTarefas) console.log('Você atingiu o limite de tarefas.');
+*/
+
+
+saudarUsuario(nome, idade);
+removerTarefa('Fazer o trabalho de Fron-end o mais rapido que der antes que esqueça');
+adicionarTarefa('Estudar');
+adicionarTarefa('Compar leite');
+adicionarTarefa('Ir à academia no dia de perna');
+adicionarTarefa('Estudar (de novo)');
+marcarComoCompleta(1);
+marcarComoCompleta(3);
+listarTarefas();
+
+if (listaDeTarefas.length === limiteTarefas) console.log('⚠ Você atingiu o limite de tarefas.');
 
