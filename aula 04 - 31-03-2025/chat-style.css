@@ -60,8 +60,8 @@ body {
 }
 
 .icon-box {
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +86,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    padding: 4px 8px;
+    padding: 6px 12px;
 
     border-radius: 3px;
     background-color: var(--primary-color);
@@ -106,6 +106,9 @@ body {
     max-width: 700px;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     background-color: var(--border-color);
     border: 2px solid var(--bg-color);
@@ -122,6 +125,10 @@ body {
 .contact-title {
     font-weight: 900;
     color: var(--text-color);
+}
+
+.contact-line {
+    width: 96%;
 }
 
 /* footer */
