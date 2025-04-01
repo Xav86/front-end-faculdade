@@ -24,7 +24,7 @@ body {
 
 .white-mode {
     --bg-color: #fafafa;
-    --border-color: #d4cdd6;
+    --border-color: #cdced6;
     --text-color: #1f1d24;
 }
 
@@ -129,6 +129,7 @@ body {
 
 .contact-line {
     width: 96%;
+    border: 1px solid var(--text-color);
 }
 
 /* footer */
