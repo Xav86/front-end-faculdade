@@ -20,6 +20,8 @@ body {
     --border-color: #2b2830;
     --text-color: #fafafa;
     --primary-color: #0D2C54;
+    --primary-color-hover: #1a3a6b9f;
+    --primary-color-active: #09295a;
 }
 
 .white-mode {
@@ -278,6 +280,19 @@ body {
     border: 0;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: var(--);
+}
+
+.send-button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.send-button:active,
+.send-button:disabled {
+    background-color: var(--primary-color-active) !important;
 }
 
 /* width */
