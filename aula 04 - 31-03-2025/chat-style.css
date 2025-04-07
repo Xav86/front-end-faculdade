@@ -208,7 +208,22 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* provavelmente temporario */
+    justify-content: space-between;
+}
+
+.chat-title {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    color: var(--text-color);
+}
+
+.title-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .chat-options {
