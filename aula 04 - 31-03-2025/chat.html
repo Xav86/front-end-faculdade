@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="chat-style.css">
+    <script src="./chat-script.js" defer></script>
     <title>Chat</title>
 </head>
 <body>
@@ -104,6 +105,17 @@
                         </div>
                         <hr>
                     </div>
+                    <div class="msg-container">
+                        <div class="msg-box-left">
+                            <div class="msg-left"><span>Lorem ipsum dolor sit.</span></div>
+                        </div>
+                        <div class="msg-box-left">
+                            <div class="msg-left"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ratione placeat beatae? Earum nemo cumque eligendi aliquid distinctio. Quae praesentium ducimus unde, est sunt laudantium dolores ipsam nam illum maiores.</span></div>
+                        </div>
+                        <div class="msg-box-rigth">
+                            <div class="msg-rigth"><span>Lorem ipsum dolor sit amet consectetur adipisicing.</span></div>
+                        </div>
+                    </div>
                     <div>
                         <!-- preencher com msg -->
                         <div class="chat-options">
@@ -113,9 +125,9 @@
                                 </div>
                             </div>
                             <form action="#" class="send-box">
-                                <input type="search" class="input-mensage" placeholder="Digite uma mensagem"></input>
+                                <input type="search" class="input-mensage" placeholder="Digite uma mensagem">
                                 <div class="send-button-box">
-                                    <button type="submit" class="send-button">
+                                    <button type="submit" class="send-button" id="send-button">
                                         <img src="./assets/icons/paper-plane.svg" alt="icone-de-envio" class="icon">
                                     </button>
                                 </div>

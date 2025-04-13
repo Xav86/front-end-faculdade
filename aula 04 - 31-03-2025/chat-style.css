@@ -240,6 +240,51 @@ body {
     border-radius: 10px;
 }
 
+.msg-container {
+    width: 100%;
+    max-height: 60vh;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    gap: 7px;
+    padding: 7px 14px;
+
+    overflow: auto;
+}
+
+.msg-box-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.msg-box-rigth {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.msg-left {
+    max-width: 45%;
+
+    padding: 6px 12px;
+
+    border-radius: 7px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.msg-rigth {
+    max-width: 45%;
+
+    padding: 6px 12px;
+
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    color: #fafafa;
+}
+
 .send-box {
     width: 100%;
     display: flex;
