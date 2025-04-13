@@ -126,6 +126,27 @@ body {
 .title-box {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+.new-contact-button {
+    padding: 3px 6px;
+
+    border-radius: 7px;
+    color: #fafafa;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.new-contact-button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.new-contact-button:active,
+.new-contact-button:disabled {
+    background-color: var(--primary-color-active) !important;
 }
 
 .contact-title {
@@ -250,7 +271,7 @@ body {
     gap: 7px;
     padding: 7px 14px;
 
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .msg-box-left {
@@ -267,22 +288,28 @@ body {
 
 .msg-left {
     max-width: 45%;
+    display: flex;
+    flex-wrap: wrap;
 
     padding: 6px 12px;
 
     border-radius: 7px;
     background-color: var(--text-color);
     color: var(--bg-color);
+    overflow: hidden;
 }
 
 .msg-rigth {
     max-width: 45%;
+    display: flex;
+    flex-wrap: wrap;
 
     padding: 6px 12px;
 
     border-radius: 7px;
     background-color: var(--primary-color);
     color: #fafafa;
+    overflow: hidden;
 }
 
 .send-box {
@@ -340,10 +367,6 @@ body {
     border: 0;
     border-radius: 50%;
     cursor: pointer;
-}
-
-.send-button:hover {
-    background-color: var(--);
 }
 
 .send-button:hover {
