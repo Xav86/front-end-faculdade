@@ -1,0 +1,6 @@
+<h1>Mostrador de imagens</h1>
+<button (click)="proximo()" type="button">proximo</button>
+<button (click)="anterior()" type="button">anterior</button>
+<p>imagem numero {{ imgIndex() }}</p>
+<br>
+<img [src]="imagensList()[imgIndex()]">

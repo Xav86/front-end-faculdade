@@ -1,22 +1,5 @@
-<h1>Contador {{ contador() }}</h1>
-<button (click)="Incrementar()" type="button">Incrementar</button>
-<button (click)="Decrementar()" type="button">Decrementar</button>
+<app-contador/>
 
-@if(contador() > 0) {
-  <p>Contador maior do que zero</p>
-}
+<app-mostrador/>
 
-@if(contador() === 0) {
-  <p>Contador igual zero</p>
-}
-
-@if(contador() < 0) {
-  <p>Contador menor do que zero</p>
-}
-
-<h1>Mostrador de imagens</h1>
-<button (click)="proximo()" type="button">proximo</button>
-<button (click)="anterior()" type="button">anterior</button>
-<p>imagem numero {{ imgIndex() }}</p>
-<br>
-<img [src]="imagensList()[imgIndex()]">
+<app-todo/>
