@@ -1,7 +1,7 @@
 <p-toolbar>
     <ng-template #start>
         @for (menu of menus(); track $index) {
-            <p-button [icon]="`pi ${menu.icon}`" class="mr-2" text [severity]="menu.selected ? 'primary' : 'secondary'" [label]="menu.label" (onClick)="selectMenu($index)" />
+            <p-button [routerLink]="menu.path" [icon]="`pi ${menu.icon}`" class="mr-2" text [severity]="menu.selected ? 'primary' : 'secondary'" [label]="menu.label" (onClick)="selectMenu($index)" />
         }
     </ng-template>
 </p-toolbar>
